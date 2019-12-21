@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cavas</title>
+</head>
+<body>
+	<div id="div" style="width: 250px; height: 250px; background-color: red;">
+		<h3 id="koha" style="color:white;margin-top: 60px;"></h3>
+		
+	</div>
+	<script type="text/javascript">
+		var time= 3000;
+
+		
+		document.getElementById("div").onclick=setTimeout(function(){
+			document.getElementById("div").style.display="none"
+			function merrNgjyren(){
+				var shkronja='0123456789ABCDEF'.split('');
+				var ngjyra = '#';
+				for(var i=0;i<6;i++){
+				ngjyra +=shkronja[Math.round(Math.random()*15)];}
+				 return ngjyra;
+			}
+		
+		 document.getElementById("koha").innerHTML="Ju keni klikua ne Ora " + Date();
+		document.getElementById("div").style.backgroundColor="red";
+		document.getElementById("div").style.borderRadius="20%";
+		},time)
+
+
+			
+
+		
+	</script>
+
+</body>
+</html>

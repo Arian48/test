@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="nrh">
+	<input type="submit" id="hudhe">
+
+	<script>
+		document.getElementById('hudhe').onclick=function () {
+			
+			var nrh=document.getElementById("nrh").value;
+			var zare = 0;
+			var numeruesi=0;
+			var kontrollo = false;
+			do{
+				zare = Math.floor(Math.random()*7);
+				if (zare!=1) {
+				console.log (zare) ;
+			}
+				numeruesi++;
+				if (nrh<1) {
+				console.log("Nuk Ja qelluat ne rradhen e "+ numeruesi);
+				kontrollo = true;
+					break;
+
+				}
+				nrh--;
+
+			}while(zare!=6);
+			if (!kontrollo) {
+				console.log("ja qlluat ne rradhen e " + numeruesi);
+			}
+		}
+
+	</script>
+</body>
+</html>
